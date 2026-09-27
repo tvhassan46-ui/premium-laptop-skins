@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800">
+<defs>
+ <linearGradient id="sky" y2="1"><stop stop-color="#10002b"/><stop offset=".5" stop-color="#4d126e"/><stop offset="1" stop-color="#ff4b87"/></linearGradient>
+ <linearGradient id="sun"><stop stop-color="#ffe66d"/><stop offset="1" stop-color="#ff6b9a"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1280" height="800" fill="url(#sky)"/>
+<circle cx="930" cy="280" r="150" fill="url(#sun)" opacity=".9" filter="url(#blur)"/><circle cx="930" cy="280" r="120" fill="url(#sun)"/>
+<g stroke="#ffdf74" stroke-width="4" opacity=".55"><path d="M815 230H1045"/><path d="M800 260H1060"/><path d="M795 290H1065"/><path d="M800 320H1060"/></g>
+<path d="M0 555 L170 390 300 520 470 330 650 540 820 370 990 530 1160 350 1280 470 V800 H0Z" fill="#171044"/>
+<path d="M0 650 L180 510 350 640 520 470 690 650 850 500 1030 640 1190 490 1280 570 V800 H0Z" fill="#080722"/>
+<g stroke="#ff4bd8" stroke-width="3" opacity=".8"><path d="M0 690H1280"/><path d="M0 745H1280"/><path d="M220 800L640 500"/><path d="M460 800L700 500"/><path d="M700 800L760 500"/><path d="M940 800L820 500"/></g>
+<g fill="#fff" opacity=".8"><circle cx="90" cy="130" r="2"/><circle cx="240" cy="230" r="3"/><circle cx="470" cy="110" r="2"/><circle cx="690" cy="180" r="2"/><circle cx="1120" cy="120" r="3"/></g>
+<text x="70" y="100" fill="#fff" font-family="Arial" font-size="24" letter-spacing="10" opacity=".85">NIGHT DRIVE</text>
+</svg>
