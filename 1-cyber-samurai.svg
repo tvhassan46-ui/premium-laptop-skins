@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950">
+<defs>
+<linearGradient id="darkBg" x2="0" y2="1">
+<stop offset="0%" stop-color="#0a0a0f"/>
+<stop offset="50%" stop-color="#1a0f1f"/>
+<stop offset="100%" stop-color="#0d0510"/>
+</linearGradient>
+<radialGradient id="redGlow" cx="45%" cy="40%">
+<stop offset="0%" stop-color="#ff1144" stop-opacity="0.8"/>
+<stop offset="40%" stop-color="#cc0033" stop-opacity="0.4"/>
+<stop offset="100%" stop-color="#ff1144" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="blueGlow" cx="55%" cy="60%">
+<stop offset="0%" stop-color="#00ccff" stop-opacity="0.7"/>
+<stop offset="40%" stop-color="#0099cc" stop-opacity="0.3"/>
+<stop offset="100%" stop-color="#00ccff" stop-opacity="0"/>
+</radialGradient>
+<filter id="glow">
+<feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+<feMerge>
+<feMergeNode in="coloredBlur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<filter id="softGlow">
+<feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+<feMerge>
+<feMergeNode in="coloredBlur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<filter id="smoke">
+<feGaussianBlur stdDeviation="12"/>
+<feComponentTransfer><feFuncA type="linear" slope="0.6"/></feComponentTransfer>
+</filter>
+</defs>
+<rect width="1400" height="950" fill="url(#darkBg)"/>
+<ellipse cx="700" cy="400" rx="600" ry="400" fill="url(#redGlow)"/>
+<ellipse cx="800" cy="500" rx="500" ry="350" fill="url(#blueGlow)"/>
+<g fill="#ff1144" opacity="0.15" filter="url(#smoke)">
+<path d="M500 600 Q480 500 520 400 Q540 300 500 200" stroke="#ff1144" stroke-width="40" fill="none" opacity="0.3"/>
+<path d="M700 700 Q680 550 740 350 Q780 200 700 100" stroke="#ff1144" stroke-width="50" fill="none" opacity="0.25"/>
+<path d="M900 650 Q920 500 880 350 Q850 200 900 50" stroke="#00ccff" stroke-width="45" fill="none" opacity="0.2"/>
+</g>
+<g>
+<ellipse cx="650" cy="350" rx="280" ry="380" fill="#1a0f2e" opacity="0.9"/>
+<path d="M620 250 L680 200 L700 350 L680 500 L620 520 Z" fill="#2a1a4e" opacity="0.8"/>
+<ellipse cx="650" cy="320" rx="100" ry="140" fill="#ff1144" opacity="0.3" filter="url(#glow)"/>
+<path d="M600 280 Q650 250 700 280 Q700 320 650 340 Q600 330 600 280" fill="#00ccff" opacity="0.25" filter="url(#glow)"/>
+<line x1="600" y1="400" x2="700" y2="420" stroke="#ff1144" stroke-width="8" opacity="0.6" filter="url(#glow)"/>
+<line x1="610" y1="450" x2="690" y2="470" stroke="#00ccff" stroke-width="6" opacity="0.5" filter="url(#glow)"/>
+</g>
+<g stroke="#ff1144" stroke-width="3" opacity="0.4" fill="none">
+<path d="M400 200 L500 150 L600 200 L550 300 Z"/>
+<path d="M800 150 L900 100 L950 200 L880 280 Z"/>
+</g>
+<g stroke="#00ccff" stroke-width="2" opacity="0.3" fill="none">
+<circle cx="300" cy="300" r="60"/>
+<circle cx="1100" cy="500" r="80"/>
+<circle cx="700" cy="800" r="50"/>
+</g>
+<g fill="#fff" opacity="0.08">
+<rect x="250" y="200" width="2" height="400"/>
+<rect x="450" y="100" width="2" height="600"/>
+<rect x="700" y="50" width="2" height="700"/>
+<rect x="950" y="150" width="2" height="500"/>
+<rect x="1150" y="200" width="2" height="400"/>
+</g>
+<g fill="#ff1144" opacity="0.15">
+<polygon points="300,100 350,80 380,150 330,170"/>
+<polygon points="1050,700 1100,680 1130,750 1080,770"/>
+<polygon points="200,600 250,580 280,650 230,670"/>
+</g>
+<g fill="#00ccff" opacity="0.12">
+<polygon points="1100,200 1150,180 1180,250 1130,270"/>
+<polygon points="400,750 450,730 480,800 430,820"/>
+</g>
+<text x="70" y="900" font-family="Arial, sans-serif" font-size="48" font-weight="bold" letter-spacing="6" fill="#ff1144" opacity="0.7">CYBER SAMURAI</text>
+</svg>

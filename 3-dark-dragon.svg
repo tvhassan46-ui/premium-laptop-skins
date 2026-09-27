@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950">
+<defs>
+<linearGradient id="dragonBg" x2="0" y2="1">
+<stop offset="0%" stop-color="#0d0606"/>
+<stop offset="50%" stop-color="#2a0f0f"/>
+<stop offset="100%" stop-color="#1a0505"/>
+</linearGradient>
+<radialGradient id="fireCenterRed" cx="50%" cy="40%">
+<stop offset="0%" stop-color="#ff4444" stop-opacity="0.9"/>
+<stop offset="30%" stop-color="#dd1111" stop-opacity="0.6"/>
+<stop offset="100%" stop-color="#ff4444" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="fireOrange" cx="45%" cy="35%">
+<stop offset="0%" stop-color="#ffaa33" stop-opacity="0.8"/>
+<stop offset="40%" stop-color="#ff6600" stop-opacity="0.4"/>
+<stop offset="100%" stop-color="#ff6600" stop-opacity="0"/>
+</radialGradient>
+<filter id="flameGlow">
+<feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+<feMerge>
+<feMergeNode in="coloredBlur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+<filter id="harshGlow">
+<feGaussianBlur stdDeviation="10"/>
+<feComponentTransfer><feFuncA type="linear" slope="0.7"/></feComponentTransfer>
+</filter>
+</defs>
+<rect width="1400" height="950" fill="url(#dragonBg)"/>
+<ellipse cx="700" cy="450" rx="700" ry="500" fill="url(#fireCenterRed)" opacity="0.4"/>
+<ellipse cx="650" cy="400" rx="600" ry="450" fill="url(#fireOrange)" opacity="0.3"/>
+<g fill="#ff4444" opacity="0.1" filter="url(#harshGlow)">
+<circle cx="300" cy="200" r="250"/>
+<circle cx="1100" cy="600" r="300"/>
+<circle cx="700" cy="450" r="400"/>
+</g>
+<g fill="none" stroke="#ff4444" stroke-width="12" opacity="0.3" filter="url(#flameGlow)">
+<path d="M400 300 Q450 250 500 320 Q480 380 450 420"/>
+<path d="M900 250 Q950 200 1000 280 Q980 350 950 390"/>
+<path d="M650 150 Q700 100 750 180 Q720 250 680 300"/>
+</g>
+<g fill="#ffaa33" opacity="0.2" filter="url(#flameGlow)">
+<polygon points="350,400 400,350 450,400 420,460"/>
+<polygon points="950,350 1000,300 1050,350 1020,410"/>
+<polygon points="650,500 700,450 750,500 720,560"/>
+</g>
+<g stroke="#ff2222" stroke-width="8" fill="none" opacity="0.5" filter="url(#flameGlow)">
+<path d="M300 500 Q400 450 500 500 Q550 520 600 500"/>
+<path d="M800 480 Q900 450 1000 500 Q1080 530 1150 520"/>
+<path d="M400 700 Q600 650 800 700 Q1000 720 1150 700"/>
+</g>
+<g fill="#1a0808">
+<ellipse cx="650" cy="400" rx="200" ry="280"/>
+<path d="M550 300 L650 250 L750 300 L700 450 L600 450 Z" fill="#2a1515" opacity="0.9"/>
+<ellipse cx="650" cy="350" rx="80" ry="120" fill="#ff2222" opacity="0.4" filter="url(#flameGlow)"/>
+</g>
+<g fill="#ff4444" opacity="0.25" filter="url(#flameGlow)">
+<circle cx="500" cy="300" r="80"/>
+<circle cx="800" cy="280" r="90"/>
+<circle cx="650" cy="200" r="70"/>
+</g>
+<g stroke="#ffaa33" stroke-width="4" fill="none" opacity="0.35" filter="url(#flameGlow)">
+<path d="M200 600 L300 550 L400 620 L500 580 L600 650"/>
+<path d="M800 650 L900 600 L1000 670 L1100 620 L1200 700"/>
+</g>
+<g fill="#ff2222" opacity="0.12">
+<polygon points="100,150 200,100 250,220 150,200"/>
+<polygon points="1200,800 1300,750 1350,870 1250,850"/>
+<polygon points="600,100 680,50 720,150 650,180"/>
+<polygon points="150,800 220,760 260,860 190,880"/>
+</g>
+<g stroke="#ffffff" stroke-width="1" opacity="0.08" fill="none">
+<line x1="150" y1="200" x2="1250" y2="250"/>
+<line x1="150" y1="500" x2="1250" y2="550"/>
+<line x1="150" y1="800" x2="1250" y2="850"/>
+</g>
+<text x="70" y="900" font-family="Arial, sans-serif" font-size="52" font-weight="bold" letter-spacing="6" fill="#ff4444" opacity="0.8">DARK DRAGON</text>
+</svg>
